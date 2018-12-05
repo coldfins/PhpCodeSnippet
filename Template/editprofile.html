@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Edit Profile</title>
+	<link href="http://34.215.40.163/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="http://34.215.40.163/css/editprofile.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://34.215.40.163/css/dashboard.css">
+	<link rel="stylesheet" href="http://34.215.40.163/css/dashheader.css">
+	<link href="http://34.215.40.163/css/footercss.css" rel="stylesheet" type="text/css">
+	<link href="http://34.215.40.163/css/reg.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="http://34.215.40.163/css/jquery-ui.css" rel="stylesheet">
+	<link href="http://34.215.40.163/css/sweetalert.css" rel="stylesheet" />
+	 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<style type="text/css">
+	.p1{
+	font-size: 14px;
+    color: red;
+    text-align: -webkit-auto;
+    padding-top: 10px;
+}
+
+</style>
+</head>
+
+<body  background="http://34.215.40.163/img/banner.png" style="background-repeat: no-repeat;">
+<div class="container-fluid pt-5 pb-5">
+    <div class="container">
+	     <div class="row justify-content-center" style="margin-top: 10%;">
+		     <div class="col-md-6 bg-white text-center py-5" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); padding: 0 52px;"><form method="post">
+			         <h2>Edit Profile</h2>
+			         <br>
+				      <div class="circle mx-auto">
+					       <!-- User Profile Image -->
+					       <img class="profile-pic position-relative img-fluid" src="http://34.215.40.163/img/profileicon.png" >
+
+					       <!-- Default Image -->
+					       <!-- <i class="fa fa-user fa-5x"></i> -->
+					       <div class="p-image">
+					       <i class="fa fa-camera upload-button"></i>
+					        <input class="file-upload" id="profile_image" name="profile_image" type="file" onchange="uplaoduserimg()" accept="image/*"/>
+					        <input type="hidden" id="imgurl">
+					  </div>
+					     </div>
+				      
+					  <br>
+					
+				 	<input type="hidden" id="uid">
+				     <div class="form-group form-group-log">
+					     <input type="text" id="first_name"   name="first_name"  class="form-control form-control-log" onchange="inputlAlphabet();">
+					     <p id="p1" class="p1"></p>
+					 </div>
+					 
+					 <div class="form-group form-group-log">
+					     <input type="text"  id="last_name" name="last_name"  class="form-control form-control-log">
+					     <p id="p1" class="p1"></p>
+					 </div>
+					 
+					 <div class="form-group form-group-log">
+					     <input type="email" id="email" name="email" disabled="" class="form-control form-control-log">
+					 </div>
+					 
+					 <div class="form-group form-group-log">
+					     <input type="text" placeholder="Mobile Number(Optional)" name="mobile_number" id="mobile_number" class="form-control form-control-log">
+					 </div>
+
+					 <div class="form-group form-group-log">
+					     <input type="text" placeholder="Company Name(Optional)" name="company_name" id="company_name" class="form-control form-control-log">
+					 </div>
+
+					 <div class="form-group form-group-log">
+					      <input type="text" name="dob" class="form-control-log bdate" id="birthdate" onchange="_calculateAge();" placeholder="Date of birth">
+					      <p id="bdt" class="p1"></p>
+					 </div>
+					 
+					 
+					 <div class="form-group">
+					 <button  class="btn btn-primary-log w-100 EditProfile " style="box-shadow: none !important;" onclick="profileValidation();"  type="button" > &nbsp;S A V E &nbsp; C H A N G E S</button>
+					    <!--  <input type="submit" class="btn btn-primary-log w-100 editProfile" value="S A V E &nbsp; C H A N G E S"> -->
+					 </div>
+
+				</form>
+			 </div>
+		 </div>
+	</div>	
+</div>
+<br><br>
+
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script> -->
+  <script src="http://34.215.40.163/js/jquery-1.10.2.js"></script>
+	<script src="http://34.215.40.163/js/jquery-ui.js"></script>
+	<script src="http://34.215.40.163/js/bootstrap.bundle.js"></script>
+	<script src="js/signout.js"></script>
+	<script src="http://34.215.40.163/js/sweetalert.min.js"></script>
+
+</body>
+</html>

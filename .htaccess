@@ -1,0 +1,35 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^Registration$ ./Template/registration.php
+RewriteRule ^Login$ ./Template/login.php
+RewriteRule ^About$ ./Template/about.php
+RewriteRule ^Bundle$ ./Template/bundle.php
+RewriteRule ^ChangePassword$ ./Template/changepassword.php
+RewriteRule ^Collaboration$ ./Template/collaboration.php
+RewriteRule ^Contact$ ./Template/contact.php
+RewriteRule ^DashBoard$ ./Template/dashboard.php
+RewriteRule ^Main$ ./Template/DeepMain.php
+RewriteRule ^DiveThruKids$ ./Template/DiveThruKids.php
+RewriteRule ^Profile$ ./Template/editprofile.php
+RewriteRule ^ForgetPassword$ ./Template/forgetpassword.php
+RewriteRule ^Gift$ ./Template/gift.php
+RewriteRule ^Individual$ ./Template/individual.php
+RewriteRule ^Individual1$ ./Template/individual1.php
+RewriteRule ^Streak$ ./Template/mystreak.php
+RewriteRule ^Player$ ./Template/player.php
+RewriteRule ^Press&Collaboration$ ./Template/pressandcollaboration.php
+RewriteRule ^PrivacyPolicy$ ./Template/privacypolicy.php
+RewriteRule ^QuickDive$ ./Template/quickdive.php
+RewriteRule ^Session$ ./Template/session.php
+RewriteRule ^Subscription$ ./Template/subscription.php
+RewriteRule ^SubscriptionCancel$ ./Template/SubscriptionCancel.php
+RewriteRule ^SubscriptionInfo$ ./Template/subscriptionInfo.php
+RewriteRule ^Summary$ ./Template/summary.php
+RewriteRule ^Support$ ./Template/support.php
+RewriteRule ^Terms&Conditions$ ./Template/termsandconditions.php
+RewriteRule ^Welcome$ ./Template/welcome.php
+RewriteRule ^WhyDiveThru$ ./Template/WhyDiveThru.php
