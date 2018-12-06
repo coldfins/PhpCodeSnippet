@@ -1,8 +1,8 @@
 ﻿
 <?php 
-define('API_ACCESS_KEY','AAAAAS5Io48:APA91bE5IsOZE29EH76dsWna699W9L1cMnxxiPugx7-XwPdaF42ZSHZv1xl1sUIaGxECOT-THLqySnZ4sqQRL_RmIdS9mFqtSdhWHLUNryqcWXXPerTaRcDH9DBpacOHaV0ZW7x4Rjce');
-define('FIREBASE_URL','https://divethru-14f14.firebaseio.com/');
-define('FIREBASE_SECRET','rS3UQUboAzPh9RPRmTwtP2So81IAdvknJfCoCm7U');
+define('API_ACCESS_KEY','');
+define('FIREBASE_URL','');
+define('FIREBASE_SECRET','');
 require '../vendor/autoload.php';
 use Firebase\Firebase;
 use Firebase\Auth\TokenGenerator;
