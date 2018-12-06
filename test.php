@@ -20,8 +20,8 @@ function payPalAuthorizeOnly($amount)
 
     // Create the payment data for a paypal account
     $payPalType = new AnetAPI\PayPalType();
-    $payPalType->setCancelUrl("http://34.215.40.163/subcription.php");
-    $payPalType->setSuccessUrl("http://34.215.40.163/dashboard.php");
+    $payPalType->setCancelUrl("http://localhost/subcription.php");
+    $payPalType->setSuccessUrl("http://localhost/dashboard.php");
     $paymentOne = new AnetAPI\PaymentType();
     $paymentOne->setPayPal($payPalType);
 
