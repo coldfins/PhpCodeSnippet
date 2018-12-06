@@ -29,7 +29,7 @@ return $nodeGetContent;
 
 
  $fcmUrl = 'https://fcm.googleapis.com/fcm/send';
- $token='fq9WKCPUFkM:APA91bEeWbl72pLajIH_jvDOcd6bab7l5IOhXPZLnji7yzBW63iHWEiIp5waOehgD7tPjgJ-1YbipPp7fyEtlsOPPm5JiSV0LjilSdQKHvQZFUL16yMLtYipriEUwBsHOnV9vDIyyRVn';
+ $token='';
      $notification = [
             'title' =>'title',
             'body' => 'body of message.',
